@@ -1,0 +1,106 @@
+/*BODY & GENERAL STYLES*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Removes default spacing around the page */
+    padding: 0; /* Removes default padding */
+    color: #000000; /* Default text color (black) */
+    background-color: #ffffff; /* Page background (white) */
+}
+
+/*HEADER STYLING */
+header {
+    background-color: #17072b; /* Dark purple header */
+    color: #FFFFFF;
+    text-align: center; /* Centers text horizontally */
+    padding: 20px; /* Space inside the header */
+}
+
+/* Header H1 / Logo */
+header h1 {
+    font-family: Tahoma, sans-serif; /* Font for the title */
+    font-weight: 700; /* Makes the text bold */
+    margin: 0; /* Removes extra space around the heading */
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none; /* Removes bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 10px 0 0 0;  /* Adds space above the menu */
+    display: flex;  /* Makes items go in a row */
+    justify-content: center; /* Centers the menu horizontally */
+    gap: 20px; /* Space between each menu item */
+}
+
+nav a {
+    color: #FFFFFF; 
+    text-decoration: none;  /* Removes underline */
+    font-weight: bold; /* Makes text bold */
+}
+
+/*MAIN CONTENT */
+.contents {
+    display: flex; /* Creates a two-column layout */
+    justify-content: space-between; /* Space between columns */
+    padding: 20px; /* Space inside the container */
+    gap: 20px; /* Space between left and rightcolumns */
+}
+
+/* LEFT COLUMN: Welcome */
+.welcome {
+    flex: 2; /* Takes more space */
+}
+
+.welcome h2 {
+    font-weight: bold; /* Makes heading bold */
+    text-decoration: underline; /* Underlines the heading */
+}
+
+
+.welcome img {
+    width: 100%; /* Full width of column */
+    height: auto; /* Keeps image proportions */
+    margin-top: 15px;  /* Space above the image */
+    border-radius: 5px; /* Slightly rounded corners */
+}
+
+/* RIGHT COLUMN / SIDEBAR: Line Up */
+.line-up {
+    flex: 1; /* Smaller column */
+    background-color: #172d67; /* Dark blue sidebar */
+    color: #FFFFFF;
+    padding: 15px; /* Space inside the box */
+    border-radius: 5px;  /* Rounded corners */
+}
+
+.line-up h2 {
+    text-decoration: underline; /* Underlines the heading */
+}
+
+.line-up ul {
+    padding-left: 20px; /* Adds space for bullet points */
+}
+
+.line-up-images {
+    display: flex; /* Places images side by side */
+    gap: 10px; /* Space between images */
+    margin-top: 15px; /* Space above the images */
+}
+
+/* Individual Line Up images */
+.line-up-images img {
+    width: 250px; 
+    height: 250px; 
+    object-fit: cover; /* Crops image nicely without stretching */
+    border-radius: 3px; /* Slightly rounded corners */
+}
+
+/* FOOTER */
+footer {
+    background-color: #8c15e9; /* Purple footer */
+    color: #FFFFFF;
+    text-align: center; /* Centers text */
+    padding: 10px; /* Space inside footer */
+    margin-top: px; /* Space above footer */
+
+}
