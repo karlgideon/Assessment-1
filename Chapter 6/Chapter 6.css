@@ -1,0 +1,92 @@
+/* Reset default spacing and make layout consistent */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Includes padding in width/height */
+}
+
+/* Style the whole page background */
+body {
+    font-family: Arial, sans-serif; /* Clean readable font */
+
+    /* Gradient background for modern look */
+    background: linear-gradient(to right, #2676ff, #2a5298);
+
+    height: 100vh; /* Full screen height */
+
+    /* Center content horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main calculator box */
+.container {
+    background-color: 	#f6f6f6; 
+    padding: 30px; /* Space inside box */
+    border-radius: 12px; /* Rounded corners */
+    width: 320px; /* Fixed width */
+
+    /* Shadow for depth effect */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+
+    text-align: center; /* Center text */
+}
+
+/* Title styling */
+h1 {
+    margin-bottom: 20px; /* Space below title */
+}
+
+/* Label styling (text above inputs) */
+label {
+    display: block; /* Moves label to its own line */
+    text-align: left; /* Align text to left */
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold; /* Make labels stand out */
+}
+
+/* Input fields */
+input {
+    width: 100%; /* Full width */
+    padding: 10px; /* Space inside input */
+    border: 2px solid #ccc; /* Light gray border */
+    border-radius: 6px; /* Rounded edges */
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Focus effect (when user clicks input) */
+input:focus {
+    border-color: #2a5298; /* Change border color */
+    outline: none; /* Remove default outline */
+
+    /* Glow effect */
+    box-shadow: 0 0 5px rgba(42, 82, 152, 0.5);
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2a5298; /* Blue color */
+    color: white; /* White text */
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 10px;
+}
+
+/* Hover effect (when mouse is over button) */
+button:hover {
+    background-color: #1e3c72; /* Darker blue */
+}
+
+/* Result text styling */
+#result {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}

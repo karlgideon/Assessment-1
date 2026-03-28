@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6 Exercices</title>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="Chapter 6.css">
+</head>
+<body>
+
+    <!-- Main container for the calculator -->
+    <div class="container">
+
+        <!-- Title -->
+        <h1>Petrol Calculator</h1>
+
+   <!-- Labels describe the input fields and are linked using "for" and "id";
+     inputs allow the user to enter numbers, with default values and step controlling decimals -->
+        
+        <!--Input: Cost per liter-->
+        <label for="price">Cost per Liter (AED):</label> 
+        <input type="number" id="price" value="1.72" step="0.01">
+
+        <!-- Input: Liters purchased -->
+        <label for="liters">Liters Purchased:</label>
+        <input type="number" id="liters" value="0" step="0.1">
+
+        <!-- Button to calculate total -->
+        <button onclick="calculateTotal()">Calculate Total</button>
+
+        <!-- Paragraph to display result -->
+        <p id="result">Total Cost: AED 0.00</p>
+
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="Chapter 6.js"></script>
+
+</body>
+</html>
